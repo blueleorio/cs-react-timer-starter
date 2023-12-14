@@ -1,6 +1,6 @@
 export const formatTime = (time) => {
-  const getSeconds = // TODO: code here;
-  const minutes = // TODO: code here;
+  const getSeconds = time;
+  const minutes = Math.floor(time/60);
   const getMinutes = // TODO: code here;
   const getHours = // TODO: code here;
 

@@ -13,17 +13,17 @@ function App() {
           <p>{time}</p>
         </div>
         <div className="button__wrapper">
-          <button className="button" onClick={() => startTimer}>
+          <button className="button" onClick={startTimer}>
             Stop
           </button>
           <button
             className="button"
             ref={// TODO: code here}
-            onClick={() => stopTimer}
+            onClick={stopTimer}
           >
             Start
           </button>
-          <button className="button" onClick={()=> resetTimer}>
+          <button className="button" onClick={resetTimer}>
             Reset
           </button>
         </div>
