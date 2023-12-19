@@ -5,12 +5,13 @@ import { useState, useRef } from "react";
 const useTimer = (ini = 0) => {
   const [time, setTime] = useState(0); // TODO: code here
 
-  const isStart = null; // TODO: code here
-  const active = null; // TODO: code here
-  const refInterval = 0; // TODO: code here
+  const isStart = useRef(true);
+  const active = useRef();
+  const refInterval = useRef(0);
 
   const startTimer = () => {
     // TODO: code here;
+    setInterval();
     active.current.disabled = true;
   };
   const stopTimer = () => {
