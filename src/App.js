@@ -4,8 +4,7 @@ import { formatTime } from "./formatTime";
 import { useGlitch } from "react-powerglitch";
 
 function App() {
-  const { time, startTimer, stopTimer, resetTimer, active, text, start } =
-    useTimer(0);
+  const { time, startTimer, stopTimer, resetTimer, active, text } = useTimer(0);
   const glitch = useGlitch({
     playMode: "always",
     createContainers: true,

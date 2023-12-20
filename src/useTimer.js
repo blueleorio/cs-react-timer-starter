@@ -76,7 +76,7 @@ const useTimer = (ini = 0) => {
     reset();
   };
 
-  return { time, startTimer, stopTimer, resetTimer, active, text, start, stop };
+  return { time, startTimer, stopTimer, resetTimer, active, text };
 };
 
 export default useTimer;
