@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import useTimer from "./useTimer";
-import formatTime from "./formatTime";
+import { formatTime } from "./formatTime";
 
 function App() {
   const { time, startTimer, stopTimer, resetTimer, active } = useTimer(0);
@@ -13,10 +13,10 @@ function App() {
           <p>{formatTime(time)}</p>
         </div>
         <div className="button__wrapper">
-          <button className="button" onClick={startTimer}>
+          <button className="button" onClick={stopTimer}>
             Stop
           </button>
-          <button className="button" ref={active} onClick={stopTimer}>
+          <button className="button" ref={active} onClick={startTimer}>
             Start
           </button>
           <button className="button" onClick={resetTimer}>
